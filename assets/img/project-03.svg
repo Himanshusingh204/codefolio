@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="g" cx=".3" cy=".3" r=".9">
+      <stop offset="0" stop-color="#7b5ea7"/>
+      <stop offset="1" stop-color="#1f1b3a"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <g fill="#ffffff">
+    <circle cx="120" cy="90" r="3"/><circle cx="210" cy="180" r="2"/><circle cx="330" cy="70" r="4"/>
+    <circle cx="420" cy="220" r="2"/><circle cx="520" cy="110" r="3"/><circle cx="640" cy="300" r="2"/>
+    <circle cx="700" cy="120" r="4"/><circle cx="260" cy="350" r="3"/><circle cx="480" cy="400" r="2"/>
+    <circle cx="150" cy="420" r="2"/><circle cx="600" cy="440" r="3"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".35">
+    <line x1="120" y1="90" x2="210" y2="180"/><line x1="210" y1="180" x2="330" y2="70"/>
+    <line x1="330" y1="70" x2="420" y2="220"/><line x1="420" y1="220" x2="520" y2="110"/>
+    <line x1="520" y1="110" x2="700" y2="120"/><line x1="420" y1="220" x2="640" y2="300"/>
+    <line x1="260" y1="350" x2="420" y2="220"/><line x1="480" y1="400" x2="640" y2="300"/>
+  </g>
+</svg>

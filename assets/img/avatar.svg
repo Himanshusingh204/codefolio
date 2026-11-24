@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="Placeholder portrait with initials">
+  <rect width="480" height="480" fill="#e9e1d2"/>
+  <circle cx="240" cy="240" r="130" fill="#0f5257"/>
+  <text x="240" y="268" text-anchor="middle" font-family="Bricolage Grotesque, Helvetica, Arial, sans-serif" font-size="110" font-weight="600" fill="#f3ede2">YN</text>
+</svg>

@@ -1,0 +1,15 @@
+.git
+.github
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+nginx.conf
+netlify.toml
+vercel.json
+render.yaml
+package.json
+README.md
+LICENSE
+node_modules
+*.log

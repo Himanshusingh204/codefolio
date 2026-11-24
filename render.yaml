@@ -1,0 +1,6 @@
+# Render (free static site): New → Blueprint, or create a Static Site pointing at this repo.
+services:
+  - type: web
+    name: portfolio
+    runtime: static
+    staticPublishPath: .

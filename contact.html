@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3ede2" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Get in touch about a project or opportunity." />
+  <title>Contact · Portfolio</title>
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hanken+Grotesk:wght@400..800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+  <main id="main" tabindex="-1">
+    <header class="page-head container">
+      <p class="label">Contact</p>
+      <h1>Contact</h1>
+      <p>Tell me what you want to build, when you need it and roughly what budget you have. I reply within two working days.</p>
+    </header>
+
+    <section class="section tight container contact">
+      <div class="reveal">
+        <p class="label">Email</p>
+        <a class="contact-mail" id="contactEmail" href="#"></a>
+        <div class="btn-row" style="margin-top:20px">
+          <button class="btn btn-ghost" id="copyEmail" type="button">Copy email</button>
+        </div>
+        <p class="label" style="margin-top:44px">Find me online</p>
+        <div class="social-list" id="socialList"></div>
+      </div>
+
+      <form class="form reveal" id="contactForm" novalidate>
+        <label for="name">Name <input id="name" type="text" name="name" required autocomplete="name" /></label>
+        <label for="email">Email <input id="email" type="email" name="email" required autocomplete="email" /></label>
+        <label for="message">Message <textarea id="message" name="message" rows="5" required></textarea></label>
+        <div class="btn-row">
+          <button class="btn btn-primary magnetic" type="submit">Send message →</button>
+          <button class="btn btn-ghost" id="resetForm" type="button">Clear</button>
+        </div>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Front-end developer. Websites, interface components and accessibility work." />
+  <meta name="theme-color" content="#f3ede2" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "Front-end developer",
+    "description": "Front-end developer who builds websites with HTML, CSS and JavaScript.",
+    "email": "mailto:hello@example.com",
+    "url": "https://your-domain.example/"
+  }
+  </script>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <title>Home · Portfolio</title>
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hanken+Grotesk:wght@400..800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <main id="main" tabindex="-1">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1 class="hero-title reveal">I build websites that load fast and are <span class="accent">easy to use</span>.</h1>
+        <p class="hero-sub reveal" id="heroIntro"></p>
+        <p class="typing reveal"><span id="typed"></span><span class="type-caret">|</span></p>
+        <div class="hero-cta reveal">
+          <a href="projects.html" class="btn btn-primary magnetic">See my projects</a>
+          <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+          <a href="#" id="resumeBtn" class="btn btn-ghost" hidden>Download résumé</a>
+        </div>
+        <div class="hero-meta reveal" id="heroStats"></div>
+      </div>
+      <figure class="hero-art reveal">
+        <img src="assets/img/avatar.svg" alt="Illustrated placeholder portrait. Replace with your own photo." width="480" height="480" />
+      </figure>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <section class="section container" aria-labelledby="services-title">
+      <div class="section-head">
+        <div>
+          <p class="label reveal">What I do</p>
+          <h2 class="section-title reveal" id="services-title">Services</h2>
+        </div>
+      </div>
+      <div class="services-grid" id="services"></div>
+    </section>
+
+    <section class="section container" aria-labelledby="work-title">
+      <div class="section-head">
+        <div>
+          <p class="label reveal">Selected work</p>
+          <h2 class="section-title reveal" id="work-title">Recent projects</h2>
+        </div>
+        <a class="btn btn-ghost reveal" href="projects.html">All projects</a>
+      </div>
+      <div class="projects-grid" id="featured"></div>
+    </section>
+
+    <section class="section container split" aria-labelledby="skills-title">
+      <div>
+        <p class="label reveal">Skills</p>
+        <h2 class="section-title reveal" id="skills-title">What I work with</h2>
+        <p class="lead reveal">The tools I use most often. The full list is on the skills page.</p>
+        <div class="btn-row reveal" style="margin-top:28px"><a class="btn btn-ghost" href="skills.html">Full skills list</a></div>
+      </div>
+      <div class="skills-grid" id="homeSkills"></div>
+    </section>
+
+    <section class="section container" aria-labelledby="quotes-title">
+      <div class="section-head">
+        <div>
+          <p class="label reveal">Feedback</p>
+          <h2 class="section-title reveal" id="quotes-title">What clients say</h2>
+        </div>
+      </div>
+      <div class="quotes-grid" id="testimonials"></div>
+    </section>
+
+    <section class="section container">
+      <div class="cta-band reveal">
+        <h2>Have a project in mind?</h2>
+        <a class="btn btn-primary magnetic" href="contact.html">Send me a message</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>

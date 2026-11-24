@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3ede2" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Selected projects: websites, web apps and animation work." />
+  <title>Projects · Portfolio</title>
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hanken+Grotesk:wght@400..800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="projects">
+  <main id="main" tabindex="-1">
+    <header class="page-head container">
+      <p class="label">Projects</p>
+      <h1>Projects</h1>
+      <p>Filter by type, or search by name, tool or technology. Open a project to see what I did and why.</p>
+    </header>
+
+    <section class="section tight container">
+      <div class="toolbar">
+        <h2 class="sr-only">Project list</h2>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+        <div class="search-wrap">
+          <input class="search" id="search" type="search" placeholder="Search projects…" aria-label="Search projects" />
+          <button class="btn btn-ghost btn-sm" id="clearSearch" type="button">Reset</button>
+        </div>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+      <p class="empty" id="noResults">No projects match that search. <button class="link-btn" id="clearSearch2" type="button">Clear filters</button></p>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>
